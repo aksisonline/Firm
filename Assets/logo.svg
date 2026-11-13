@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>Firm logo</title>
+  <!-- Black disc with the pencil-tip glyph knocked out in white -->
+  <circle cx="512" cy="512" r="416" fill="#000"/>
+  <g fill="none" stroke="#fff" stroke-width="56" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M336 770 L512 262 L688 770"/>
+    <path d="M398 590 H626"/>
+  </g>
+</svg>

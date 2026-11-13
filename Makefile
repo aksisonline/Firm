@@ -1,4 +1,4 @@
-APP      = TrackpadPen
+APP      = Firm
 BUILD    = .build/release
 BUNDLE   = build/$(APP).app
 CONTENTS = $(BUNDLE)/Contents
@@ -15,7 +15,7 @@ bundle: build
 	mkdir -p $(CONTENTS)/MacOS $(CONTENTS)/Resources
 	cp $(BUILD)/$(APP) $(CONTENTS)/MacOS/$(APP)
 	cp Resources/Info.plist $(CONTENTS)/Info.plist
-	codesign --force --sign - --identifier dev.aksisonline.TrackpadPen $(BUNDLE)
+	codesign --force --sign - --identifier dev.aksisonline.Firm $(BUNDLE)
 	@echo "Built $(BUNDLE)"
 
 run: bundle

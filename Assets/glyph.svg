@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>Firm glyph (transparent, single colour)</title>
+  <!-- Pencil tip only, on transparent background: use as a layer in Icon Composer -->
+  <g fill="none" stroke="#000" stroke-width="56" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M336 770 L512 262 L688 770"/>
+    <path d="M398 590 H626"/>
+  </g>
+</svg>

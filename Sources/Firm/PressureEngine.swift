@@ -147,7 +147,7 @@ final class PressureEngine: ObservableObject {
             CGEvent.tapEnable(tap: tap, enable: true)
             CFRunLoopRun()
         }
-        thread.name = "TrackpadPen.EventTap"
+        thread.name = "Firm.EventTap"
         thread.qualityOfService = .userInteractive
         thread.start()
         self.thread = thread

@@ -38,7 +38,7 @@ struct ContentView: View {
         HStack {
             Image(systemName: "pencil.tip.crop.circle.fill").font(.title2)
             VStack(alignment: .leading, spacing: 0) {
-                Text("TrackpadPen").font(.headline)
+                Text("Firm").font(.headline)
                 Text(engine.statusMessage).font(.caption).foregroundStyle(.secondary)
             }
             Spacer()

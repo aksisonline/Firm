@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "TrackpadPen",
+    name: "Firm",
     platforms: [.macOS(.v13)],
     targets: [
         .target(
@@ -10,9 +10,9 @@ let package = Package(
             path: "Sources/MultitouchShim"
         ),
         .executableTarget(
-            name: "TrackpadPen",
+            name: "Firm",
             dependencies: ["MultitouchShim"],
-            path: "Sources/TrackpadPen",
+            path: "Sources/Firm",
             swiftSettings: [.unsafeFlags(["-parse-as-library"])]
         )
     ]

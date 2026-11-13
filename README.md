@@ -1,4 +1,4 @@
-# TrackpadPen
+# Firm
 
 A tiny macOS menu-bar utility that turns your Force Touch trackpad into a **pressure-sensitive pen** for Photoshop, Affinity, Blender, Krita and anything else that reads macOS tablet events — globally, with no per-app plugins.
 
@@ -20,10 +20,10 @@ It sits alongside the normal mouse/trackpad driver and only *adds* data: every l
 Requires Xcode command line tools (Swift 5.9+) and macOS 13+.
 
 ```sh
-make run          # builds, bundles build/TrackpadPen.app, and opens it
+make run          # builds, bundles build/Firm.app, and opens it
 ```
 
-On first enable, macOS asks for **Accessibility** and **Input Monitoring**. Grant both to `TrackpadPen.app`, then flip the toggle again. Rebuilding changes the ad-hoc signature, so you may need to remove and re-add the app in System Settings → Privacy & Security.
+On first enable, macOS asks for **Accessibility** and **Input Monitoring**. Grant both to `Firm.app`, then flip the toggle again. Rebuilding changes the ad-hoc signature, so you may need to remove and re-add the app in System Settings → Privacy & Security.
 
 ## Controls
 
@@ -47,11 +47,11 @@ On first enable, macOS asks for **Accessibility** and **Input Monitoring**. Gran
 
 ```
 Sources/MultitouchShim/    C header with the MTTouch struct layout
-Sources/TrackpadPen/
+Sources/Firm/
   MultitouchReader.swift   dlopen'd MultitouchSupport force stream
   PressureEngine.swift     pressure mapping, event tap, tablet-event synthesis
   Permissions.swift        Accessibility / Input Monitoring checks
-  TrackpadPenApp.swift     MenuBarExtra entry point
+  FirmApp.swift     MenuBarExtra entry point
   ContentView.swift        settings popover + live pressure meter
 Resources/Info.plist       LSUIElement bundle metadata
 Makefile                   swift build → .app bundle → ad-hoc codesign

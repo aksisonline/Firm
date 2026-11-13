@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct TrackpadPenApp: App {
+struct FirmApp: App {
     @StateObject private var engine = PressureEngine()
 
     var body: some Scene {
